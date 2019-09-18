@@ -28,8 +28,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'igmfn7i)0a0t*7z#l3x4a@ub=*hain
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
-ALLOWED_HOSTS = []
-#ALLOWED_HOSTS = ['cvcollector.herokuapp.com']
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cvcollector.herokuapp.com']
 
 
 
