@@ -1,0 +1,3 @@
+{% for candidate in object_list.all %}
+			<a href="{% url 'candidate_detail' candidate.id %}"><h3> {{ candidate.pk }}. {{ candidate.name|capfirst }}</h3></a>
+{% endfor %}
