@@ -28,8 +28,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'igmfn7i)0a0t*7z#l3x4a@ub=*hain
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
-#ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['cvcollector.herokuapp.com']
+ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['cvcollector.herokuapp.com']
 
 
 
@@ -95,8 +95,7 @@ DATABASES = {
         'PASSWORD':'a75420eeaaecace67c5587a1c95a683bc309433d1eaef6c98571d095f924eb83',
         'HOST':'ec2-54-235-156-60.compute-1.amazonaws.com',
         'PORT':'5432',
-    }
- 
+    } 
 
 }
 
@@ -138,4 +137,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
 django_heroku.settings(locals())

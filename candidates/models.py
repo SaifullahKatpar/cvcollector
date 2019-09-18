@@ -22,7 +22,7 @@ class Job(models.Model):
 class Candidate(models.Model):
     name = models.CharField(max_length=50)
     skills = models.CharField(max_length=800)
-    cv = models.FileField(upload_to='pdfs/', null=True, blank=True)   
+    cv = models.FileField(upload_to='static/cvs/', null=True, blank=True)   
     
     def __str__(self):
         return self.name
